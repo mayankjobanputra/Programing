@@ -1,0 +1,15 @@
+#access classes
+import Gennet_Net
+
+print "Welcome to Neu"
+
+#Network
+Net1 = Gennet_Net.Net();
+print "Network Created Successfully"
+
+#Layer(in,no_neu)
+Lay_in=raw_input("Enter input list for Input_Layer\ne.g. 1,0,1,1").split(",")
+if (len(Lay_in)== Net1.in_list[0]):
+	print "Thats Correct"
+	Layers = Layer(Lay_in)
+	Layers.print_nodes()

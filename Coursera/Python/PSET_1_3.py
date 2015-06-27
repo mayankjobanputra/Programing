@@ -1,11 +1,11 @@
 abc = 'abcdefghijklmnopqrstuvwxyz'
 cba = 'zyxwvutsrqponmlkjihgfedcba'
-s = 'zyxwvutsrqponmlkjihgfedcba'
+#s = 'zyxwvutsrqponmlkjihgfedcba'
 pos = 0
 max_len = 1
 tmp = 1
 for i in range(len(s)-1):
-	print i , s[i] , ord(s[i]) , tmp
+	#print i , s[i] , ord(s[i]) , tmp
 	if(ord(s[i+1])>=ord(s[i])):
 		tmp +=1
 	else:

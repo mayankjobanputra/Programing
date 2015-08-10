@@ -1,0 +1,5 @@
+ls > temp  -- this will create or re-write a file of the name 'temp' and store the result of 'ls' command inside it
+
+wc temp > temp -- this will create or re-write a file of the name 'temp' and store the result of 'wc temp' inside it
+
+Here if we run cat temp then output will be "0 0 0 temp" because while running 'wc temp > temp' the first file is opened rather than running wc temp

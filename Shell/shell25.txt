@@ -1,0 +1,3 @@
+who | sort -> this show the sorted data of current users on the console 
+who > sort -> this will create a file name sort and will write the data of who inside file
+

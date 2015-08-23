@@ -1,3 +1,5 @@
+#Lab Assignment 1
+#Mayank - 131026
 ifs1=$IFS
 IFS=": "
 set `date +%c`

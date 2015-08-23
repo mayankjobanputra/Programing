@@ -1,3 +1,6 @@
+#Lab Assignment 1
+#Mayank - 131026
+
 ls > temp  -- this will create or re-write a file of the name 'temp' and store the result of 'ls' command inside it
 
 wc temp > temp -- this will create or re-write a file of the name 'temp' and store the result of 'wc temp' inside it

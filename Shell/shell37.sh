@@ -1,69 +1,23 @@
-clear
-read -p "Enter path : " fpath
-read -p "Enter date : " Date
-read -p "Enter month : " Month
-read -p "s/b? " choice
-cd $fpath
-
-set `ls -lt`
-shift 2
-
-if [ $choice = "s" ]
-then
-while true
-do
-
-if [ $7 = $Date ] && [ $6 = $Month ]
-then
-break
-fi
-
-echo $1  $6 $7  $9
-shift 9
-
-if [ ! -n "$1" ]
-then
-break
-fi 
-
-done
-fi
-
-
-if [ $choice = "b" ]
-then
-while true
-do
-
-if [ $7 = $Date ] && [ $6 = $Month ]
-then
-break
-fi
-
-
-shift 9
-
-if [ ! -n "$1" ]
-then
-break
-fi 
-
-done
-
-
-while true
-do
-
-
-echo $1  $6 $7  $9
-shift 9
-
-if [ ! -n "$1" ]
-then
-break
-fi 
-
-done
-fi
-
-
+#Lab Assignment - 1
+#Mayank 131026 
+echo "Enter the path of the directory :"
+read path 
+cd 
+cd $path
+echo "Enter the operation :"
+cat << op
+1. Newer than a specified date/time
+2. Older than a specified date/time
+op
+read inp
+case $inp in 
+	1) echo "Newer than past how many days(eg-5)"
+	read var
+	find . -type f -mtime +$var;;
+	
+	2) echo "Older than past how many days(eg-5)"
+	read var
+	find . -type f -mtime -$var;;
+	
+	*) echo "Enter proper choice (1 or 2)" ;;
+esac

@@ -1,5 +1,5 @@
-#@(#)Program o perform different file/text operations in file poem...! 
-
+#Lab Assignment 1
+#Mayank - 131026
 while true
 do
 clear

@@ -1,3 +1,5 @@
+#Lab Assignment 1
+#Mayank - 131026
 read -p "Enter Dir 1 " dir1
 read -p "Enter Dir 2 " dir2
 cd $dir1

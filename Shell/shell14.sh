@@ -2,7 +2,6 @@
 #Mayank - 131026
 while true
 do
-clear
 
 cat << MENU
 
@@ -29,12 +28,10 @@ case $choice in
 		echo "\n Current directory: \c" 
 		pwd
 		
-		sleep 0.5
 		;;
 
 	[bB]) echo "Listing directory..."
 		ls
-		sleep 0.5
 		;;
 	
 	[cC]) echo "Making directory..."
@@ -42,7 +39,6 @@ case $choice in
 		read dir
 		
 		mkdir $dir
-		sleep 0.5
 		;;
 
 	[dD]) echo "Changing directory..."
@@ -50,7 +46,6 @@ case $choice in
 		read $path
 		
 		cd "$dir"
-		sleep 0.5
 		;;
 
 	[eE]) echo "Coping file..."
@@ -60,7 +55,6 @@ case $choice in
                 read dest
 		
 		cp -i $filename $dest
-		sleep 0.5
 		;;
 
 	[fF]) echo "Renaming file..."
@@ -70,7 +64,6 @@ case $choice in
                 read nfilename
                 
                 mv -i $filename $nfilename
-		sleep 0.5
 		;;
 	
 	[gG]) echo "Deleting file..."
@@ -78,26 +71,20 @@ case $choice in
                 read filename
        
 	        rm -i $filename
-		
-		sleep 0.5
 		;;
 
 	[hH]) echo "Editing file..."
                 echo 'Enter the filename to be edited'
                 read filename
         
-		vi $filename
+		gedit $filename
 		
-		sleep 0.5
 		;;
 
 	[iI]) echo "Exiting \c"
 		echo '. \c'
-		sleep 0.5
 		echo '. \c'
-		sleep 0.5
 		echo '. \c'
-		sleep 0.5
 		echo " Bye"
 		exit;;        
 	

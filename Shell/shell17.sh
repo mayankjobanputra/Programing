@@ -2,7 +2,6 @@
 #Mayank - 131026
 while true
 do
-clear
 
 cat << MENU
 
@@ -33,7 +32,6 @@ case $choice in
 		
 		echo "\nLines: $1"
 		
-		sleep 3
 		;;
 
 	[bB]) echo "Frequency of the Word : fleas..."
@@ -41,40 +39,33 @@ case $choice in
 		echo "Occurrence of the word --> fleas : \c"
 		grep -io "fleas" $file  | wc -l
 	
-		sleep 0.5
 		;;
 
 	[cC]) echo "Lines without word : fleas...\n"
         
 	        grep -v "fleas" $file
 
-                sleep 0.5
                 ;;
 	
 	[eE]) echo "Exiting \c"
 		echo '. \c'
-		sleep 0.5
 		echo '. \c'
-		sleep 0.5
 		echo '. \c'
-		sleep 0.5
 		echo " Bye"
 		exit;;        
 	
 	*) echo 'Something else typed \n Please try again'
-		sleep 2
+		
 esac
 
 	echo '\n Do you want to continue... [y/n] ? \c'
         read charc
                 if [ "$charc" != "Y" -a "$charc" != "y" ]
                 then
-                        echo 'Oops...!'
+                        echo 'Exiting'
                         exit
                 else
-                        echo 'Wait...'
-
-                        sleep 1
+                                              
                         continue
 
                 fi

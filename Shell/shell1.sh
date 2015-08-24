@@ -1,6 +1,6 @@
 #Lab Assignment 1
 #Mayank - 131026
-echo "Enter the chpoice"
+echo "Enter the choice"
 
 cat << choice
 	CHOICE
@@ -13,7 +13,7 @@ read choice
 case $choice in
 	[1]) echo "Enter the filename to delete"
 	    read filename
-	    echo "Enter the path to file. Press just enter to delete file from current dir"
+	    echo "Enter the path to file"
 	    read fpath
 	    cd $fpath
 	    rm -i $filename;;

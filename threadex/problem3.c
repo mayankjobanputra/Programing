@@ -1,6 +1,9 @@
 /*
-Compile using command below:
-gcc problem3 -o p3 -lpthread -lm
+Mayank Jobanputra
+131026
+
+compile using command given below:
+gcc -o p2 problem.c -lpthread
 */
 #include<stdio.h>
 #include<stdlib.h>
@@ -72,6 +75,5 @@ int main()
 	pthread_create(&p2,NULL,roots,NULL);
 	pthread_join(p1,NULL);
 	pthread_join(p2,NULL);
-	//pthread_create(&p2, NULL,roots,NULL);
 	return 0;
 }

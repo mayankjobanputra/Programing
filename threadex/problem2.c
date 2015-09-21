@@ -1,3 +1,10 @@
+/*
+Mayank Jobanputra
+131026
+
+compile using command given below:
+gcc -o p2 problem.c -lpthread
+*/
 #include<pthread.h>
 #include<stdio.h>
 

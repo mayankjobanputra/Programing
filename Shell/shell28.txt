@@ -1,6 +1,0 @@
-#Lab Assignment 1
-#Mayank - 131026
-
-date ; who | wc -> will show date and pass the output of only "who" to "wc"
-
-(date;who) | wc -> will combine the output of date and who and then it will send the output to wc
